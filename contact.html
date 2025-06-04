@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Contact</title>
+</head>
+<body>
+     <div class="bg-black text-white h-10 flex gap-10 justify-center offer-bar">
+      <p class="">Sign up and <b>Get 20% OFF for your first order</b></p>
+      <p class="cursor-pointer" id="closeofferbar"><b>X</b></p>
+    </div>
+
+    <!-- Navbar -->
+    <div class="flex justify-between p-5">
+      <div>
+        <h2 class="font-bold text-2xl">Nostra</h2>
+      </div>
+      <div class="flex gap-12 md:flex hidden">
+        <p><a href="index.html">Home</a></p>
+        <p><a href="#">New Arrival</a></p>
+        <p><a href="#">Most Wanted</a></p>
+        <p><a href="collections.html">Collections</a></p>
+        <p><a href="#">Contact Us</a></p>
+      </div>
+      <div class="md:hidden flex" id="sidenav__activate">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </div>
+    </div>
+    <!-- side navbar -->
+    <div
+      class="side__navbar hidden fixed top-0 left-0 bg-black text-white h-full w-1/4 p-5 transition-transform duration-1000"
+    >
+      <p class="cursor-pointer flex justify-end">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-5"
+          id="close__sidenav"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18 18 6M6 6l12 12"
+          />
+        </svg>
+      </p>
+      <!-- navlinks -->
+      <div class="flex flex-col gap-5 mt-5" id="nav__links">
+        <p><a href="index.html">Home</a></p>
+        <p><a href="#">New Arrival</a></p>
+        <p><a href="#">Most Wanted</a></p>
+        <p><a href="collections.html">Collections</a></p>
+        <p><a href="#">Contact Us</a></p>
+      </div>
+    </div>
+   <!-- Contact form -->
+    <div class="p-4 mx-auto max-w-xl bg-white">
+      <h1 class="text-2xl text-slate-900 font-semibold text-center">Contact us</h1>
+      <form class="mt-8 space-y-5">
+        <div>
+          <label class='text-sm text-slate-800 font-medium mb-2 block'>Name</label>
+          <input type='text' placeholder='Enter Name'
+            class="w-full py-2.5 px-4 text-slate-800 bg-gray-100 border border-gray-200 focus:border-slate-900 focus:bg-transparent text-sm outline-0 transition-all" />
+        </div>
+        <div>
+          <label class='text-sm text-slate-800 font-medium mb-2 block'>Email</label>
+          <input type='email' placeholder='Enter Email'
+            class="w-full py-2.5 px-4 text-slate-800 bg-gray-100 border border-gray-200 focus:border-slate-900 focus:bg-transparent text-sm outline-0 transition-all" />
+        </div>
+        <div>
+          <label class='text-sm text-slate-800 font-medium mb-2 block'>Subject</label>
+          <input type='text' placeholder='Enter Subject'
+            class="w-full py-2.5 px-4 text-slate-800 bg-gray-100 border border-gray-200 focus:border-slate-900 focus:bg-transparent text-sm outline-0 transition-all" />
+        </div>
+        <div>
+          <label class='text-sm text-slate-800 font-medium mb-2 block'>Message</label>
+          <textarea placeholder='Enter Message' rows="4"
+            class="w-full px-4 text-slate-800 bg-gray-100 border border-gray-200 focus:border-slate-900 focus:bg-transparent text-sm pt-3 outline-0 transition-all"></textarea>
+        </div>
+        <button type='button'
+          class="!mt-8 text-white bg-slate-900 bg-black hover:bg-slate-800 tracking-wide text-[15px] px-4 py-2 w-full outline-0 cursor-pointer">Send</button>
+      </form>
+    </div>
+
+    <section class="p-4 text-center">
+        <h1 class="font-bold text-5xl mt-5">Join our News Letter</h1>
+        <p class="mt-1 text-2xl">
+          Signup for our email newspaper to get exclusive discounts, updates,
+          and more
+        </p>
+        <input
+          type="text"
+          class="border-4 border-black p-2 m-3 mt-2"
+          style="width: 80%"
+        /><br />
+        <button
+          class="border bg-black text-white p-3 m-1 hover:text-black hover:bg-white hover:border-black transition duration-1000"
+        >
+          Subscribe
+        </button>
+      </section>
+
+    <div style="background-color: #1d232c">
+      <div class="flex flex-col gap-8 p-5">
+        <p class="font-bold text-5xl text-white">Nostra</p>
+        <p class="text-white text-2xl">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Perspiciatis, deserunt!
+        </p>
+        <p class="text-white text-2xl">@ 2025 Nostra.com</p>
+      </div>
+</body>
+</html>

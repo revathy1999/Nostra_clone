@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Collections</title>
+</head>
+<body>
+     <!-- Offer bar -->
+    <div class="bg-black text-white h-10 flex gap-10 justify-center offer-bar">
+      <p class="">Sign up and <b>Get 20% OFF for your first order</b></p>
+      <p class="cursor-pointer" id="closeofferbar"><b>X</b></p>
+    </div>
+
+    <!-- Navbar -->
+    <div class="flex justify-between p-5">
+      <div>
+        <h2 class="font-bold text-2xl">Nostra</h2>
+      </div>
+      <div class="flex gap-12 md:flex hidden">
+        <p><a href="index.html">Home</a></p>
+        <p><a href="#">New Arrival</a></p>
+        <p><a href="#">Most Wanted</a></p>
+        <p><a href="#">Collections</a></p>
+        <p><a href="contact.html">Contact Us</a></p>
+      </div>
+      <div class="md:hidden flex" id="sidenav__activate">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </div>
+    </div>
+    <!-- side navbar -->
+    <div
+      class="side__navbar hidden fixed top-0 left-0 bg-black text-white h-full w-1/4 p-5 transition-transform duration-1000"
+    >
+      <p class="cursor-pointer flex justify-end">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-5"
+          id="close__sidenav"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18 18 6M6 6l12 12"
+          />
+        </svg>
+      </p>
+      <!-- navlinks -->
+      <div class="flex flex-col gap-5 mt-5" id="nav__links">
+        <p><a href="index.html">Home</a></p>
+        <p><a href="#">New Arrival</a></p>
+        <p><a href="#">Most Wanted</a></p>
+        <p><a href="#">Collections</a></p>
+        <p><a href="contact.html">Contact Us</a></p>
+      </div>
+    </div>
+    <!-- Collections -->
+     <div class="collections__container flex gap-5">
+        <div class="relative filter-section" style="width: 20%;">
+            <div class="p-5">
+                <p class="font-bold text-2xl mb-5">Ocassion</p>
+                <input type="checkbox"> Summer<br>
+                <input type="checkbox"> Party <br>
+                <input type="checkbox"> Beach<br>
+            </div>
+
+            <div class="p-5">
+                <p class="font-bold text-2xl mb-5">Colors</p>
+                <input type="checkbox"> Red<br>
+                <input type="checkbox"> Blue <br>
+                <input type="checkbox"> White<br>
+                <input type="checkbox"> Green<br>
+
+            </div>
+
+            <div class="p-5">
+                <p class="font-bold text-2xl mb-5">Arrivals</p>
+                <input type="checkbox"> New<br>
+                <input type="checkbox"> Old 
+            </div>
+            
+            <hr class="vertical-line">
+            
+        </div>
+<!-- Search bar -->
+ <div class="Products-container">
+<form action="" class="flex relative">
+    <input type="text" placeholder="Search.." class="border border-black p-3 rounded-lg" style="width: 1040px;">
+    <img src="./images/search.png" alt="search" class="w-6 absolute right-5 top-3">
+</form>
+<div class="grid grid-cols-3 gap-10 mt-10">
+    <div>
+        <img src="./images/f1.jpg" alt="shirts" class="w-80">
+        <p class="font-bold text-3xl mt-3">Floral Summer</p>
+        <p>$299</p>
+    </div>
+     <div>
+        <img src="./images/f2.jpg" alt="shirts" class="w-80">
+        <p class="font-bold text-3xl mt-3">Floral Green</p>
+        <p>$240</p>
+    </div>
+     <div>
+        <img src="./images/f3.jpg" alt="shirts" class="w-80">
+        <p class="font-bold text-3xl mt-3">Floral Summer</p>
+        <p>$350</p>
+    </div>
+    <div>
+        <img src="./images/f5.jpg" alt="shirts" class="w-80">
+        <p class="font-bold text-3xl mt-3">Party Floral</p>
+        <p>$229</p>
+    </div>
+     <div>
+        <img src="./images/f6.jpg" alt="shirts" class="w-80">
+        <p class="font-bold text-3xl mt-3">Beach Shirt</p>
+        <p>$250</p>
+    </div>
+     <div>
+        <img src="./images/n1.jpg" alt="shirts" class="w-80">
+        <p class="font-bold text-3xl mt-3">Shirt party Summer</p>
+        <p>$370</p>
+    </div>
+    <div>
+        <img src="./images/n3.jpg" alt="shirts" class="w-80">
+        <p class="font-bold text-3xl mt-3">Party Floral</p>
+        <p>$229</p>
+    </div>
+     <div>
+        <img src="./images/n4.jpg" alt="shirts" class="w-80">
+        <p class="font-bold text-3xl mt-3">Beach Shirt</p>
+        <p>$250</p>
+    </div>
+     <div>
+        <img src="./images/n8.jpg" alt="shirts" class="w-80">
+        <p class="font-bold text-3xl mt-3">Shirt party Summer</p>
+        <p>$370</p>
+    </div>
+</div>
+
+</div>
+     </div>
+     <section class="p-4 text-center mt-5">
+      <h1 class="font-bold text-5xl mt-5">Join our News Letter</h1>
+      <p class="mt-1 text-2xl">
+        Signup for our email newspaper to get exclusive discounts, updates, and
+        more
+      </p>
+      <input
+        type="text"
+        class="border-4 border-black p-2 m-3 mt-2"
+        style="width: 80%"
+      /><br />
+      <button class="border bg-black text-white p-3 m-1 hover:text-black hover:bg-white hover:border-black transition duration-1000">Subscribe</button>
+    </section>
+     <!-- footer -->
+      <div style="background-color: #1D232C; margin-top: 20px;">
+      <div class="flex flex-col gap-8 p-5">
+        <p class="font-bold text-5xl text-white">Nostra</p>
+        <p class="text-white text-2xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, deserunt!</p>
+        <p class="text-white text-2xl">@ 2025 Nostra.com</p>
+      </div>
+     </div>
+</body>
+</html>
